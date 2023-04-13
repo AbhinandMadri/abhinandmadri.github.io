@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/138d3f4826.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1> <span>PORT</span>-FOLIO</h1>
+                <ol id="menu">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <i class="fas fa-timer" onclick="close()"></i>
+                </ol>
+                <i class="fas fa-bars" onclick="open()"></i>
+            </nav>
+            <div class="header-text">
+                <span>
+                    <p>FRONT-END DEVELOPER</p>
+                    <h1>Hi, Myself <span>ABHINAND MADRI</span></h1>
+                </span>
+                <div class="profile">
+                    <img src="./img/Image.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <h1>ABOUT ME</h1>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, officia maiores! Blanditiis, dolorum ipsum ipsam ex soluta laborum iure placeat dolorem, temporibus voluptatum consequatur aliquam libero vel quas eum earum!</p> -->
+        <div class="tab">
+            <p class="tablinks acl" onclick="opentab('skill')">SKILLS</p>
+            <p class="tablinks" onclick="opentab('eduction')">EDUCATION</p>
+            <p class="tablinks" onclick="opentab('project')">PROJECT</p>
+        </div>
+        <div class="tabcontents act" id="skill">
+            <ol>
+                <li><span>JAVA</span> <br> Java Programming</li>
+                <li><span>WEB DEVELOPMENT</span> <br> Websites using HTML, CSS, JAVA-SCRIPT</li>
+                <li><span>DATABASE</span> <br>SQL, MySQL</li>
+            </ol>
+        </div>
+        <div class="tabcontents" id="eduction">
+            <ol>
+                <li><span>2019-2022</span> <br>BACHELOR OF COMPUTER APPLICATION FROM SHARNBASVA UNIVERSITY, KALABURAGI</li>
+                <li><span>2022</span> <br>JAVA FULLSTACK DEVELOPMENT FROM JSPIDER, BANGALORE</li>
+            </ol>
+        </div>
+        <div class="tabcontents " id="project">
+            <ol>
+                <li><span>PROJECT 2022</span> <br>Online 
+                    Examination System with Timer</li>
+                <li><span>INTERNSHIP 05/2022-07/2022</span> <br>Internship at Turnia Technology on Web Technology, Vijayapura</li>
+            </ol>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">MY SERVICES</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>JAVA APPLICATION</h2>
+                    <p>Applications built using Java, core java.</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>WEB DEVELOPER</h2>
+                    <p>Projects built using HTML, CSS, JAVA-SCRIPT, REACT.JS</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>DATABASE</h2>
+                    <p>Built projects using Oracle SQL, MySQL where data can be stored for further reference.</p>
+                    <a href="">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">MY WORK</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="./img/snake-game.jpg" alt="">
+                    <div class="layer">
+                        <h3>SNAKE GAME</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quasi maxime! Delectus, quidem? Facere perspiciatis eligendi est fugit et qui id laudantium, adipisci, laborum rem reprehenderit accusamus, cum impedit sed?</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/ludo-logo.jpeg" alt="">
+                    <div class="layer">
+                        <h3>LUDO</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima provident, laudantium nisi quo doloremque eligendi sed velit sunt saepe id fugiat consectetur praesentium voluptatibus sint porro natus aspernatur, asperiores dicta.</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/pubg-logo.jpg" alt="">
+                    <div class="layer">
+                        <h3>PUBG</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ea rerum laborum hic, temporibus exercitationem harum esse et qui ratione soluta cumque corrupti ex iure id aliquid. Veritatis, nesciunt sed?</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="button">SEE-MORE</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1 class="sub-title">CONTACT-ME</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>abhinandjmadri@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8861171749</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="" download="" class="button">DOWNLOAD CV</a>
+            </div>
+            <div class="contact-right"></div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tablinks");
+        var tabcontents = document.getElementsByClassName("tabcontents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("acl")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("act")
+            }
+            event.currentTarget.classList.add("acl");
+            document.getElementById(tabname).classList.add("act");
+        }
+    </script>
+    <script>
+        var menu = document.getElementById("sidemenu");
+        function open(){
+            menu.style.right = "0";
+        }
+        function close(){
+            menu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
